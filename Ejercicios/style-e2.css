@@ -1,0 +1,37 @@
+/*Este es un comentario en CSS */
+*{ /* Selector Universal */
+    background-color: #012e46;
+}
+
+h1{/* Selector de tipo o elemento: Selecciona los elementos cone se nombre */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #6a7987;
+}
+
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d9ece9;
+}
+
+div{
+    text-align: center;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #61608b;
+}
+
+ul,ol{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #9eadbd;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #D9ece9;
+}

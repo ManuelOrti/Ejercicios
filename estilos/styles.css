@@ -1,3 +1,33 @@
-*{
-    background-color: #b39cd0;
+/*Este es un comentario en CSS */
+*{ /* Selector Universal */
+    background-color: #0c82a0 ;
+}
+
+h1{/* Selector de tipo o elemento: Selecciona los elementos cone se nombre */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #00334e;
+}
+
+/*Selector de clase: Las clases sí se comparten, se utilizan para agrupar */
+.Lista-de-alimentos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: #c99dcd;
+}
+
+/* Selectores de ID: Seleccionan un elemento específico y NO se comparte con otros elementos*/
+#parrafo-inicial{
+    background-color: darkgreen;
+    font-size: 60px;
+}
+
+#gato-ninja{
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
 }

@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Se utiliza para el responsive, pero no quiere decir que al colocarla, ya todo sea responsive -->
     <title>Mi página web</title> <!-- Título del sitio -->
-    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="stylesheet" href="./estilos/styles.css"> <!-- CSS Externo -->
 
 </head>
 
 <body>
     <h1>Mis comidas favoritas 🎶😎</h1> <!-- Sólo debe haber un h1 por documento -->
     <h2> Mole Oaxaqueño </h2>
-        <p>
-            El mole negro es uno de los platillos más famosos y representativos de la cocina tradicional mexicana. Esta receta tiene variantes en la carne que la acompaña y el azúcar que se utiliza, dependiendo de la zona del estado en donde lo preparen; pero lo que prevalece es el chile guajillo, el chocolate, el ajo y el dulce.
-        </p>
+    <p style="color: #344a53;" id="parrafo-inicial">
+        El mole negro es uno de los platillos más famosos y representativos de la cocina tradicional mexicana. Esta
+        receta tiene variantes en la carne que la acompaña y el azúcar que se utiliza, dependiendo de la zona del estado
+        en donde lo preparen; pero lo que prevalece es el chile guajillo, el chocolate, el ajo y el dulce.
+    </p>
     <h2> Mole Verde </h2>
     <h3> Tamales </h3>
     <h4> Tlacoyos </h4>
     <h5> Pavito Navideño </h5>
     <h6> Pastel de Chocolate </h6>
 
-    <img src="https://previews.123rf.com/images/vladayoung/vladayoung1704/vladayoung170401012/76954122-vector-comida-internacional-menu-fusion-cocina-carte-vintage-dibujado-a-mano-las-comidas-r%C3%" alt="Panadería Vintage">
+    <img id="gato-ninja" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmdzJRZs_NbUt-Dvr0ueI6K3JtTPMbRBjKmQ&s"
+        alt="Panadería Vintage">
 
     <!-- Elementos en línea y elementos en bloque -->
 
@@ -31,7 +34,7 @@
     <div>Holi</div>
     <div>Este es un contenedor genérico <strong><em>en bloque</em></strong> </div>
 
-    <p> Mi gato es <strong> muy gruñon </strong> </p> 
+    <p> Mi gato es <strong> muy gruñon </strong> </p>
     <hr>
 
     <p>
@@ -68,7 +71,7 @@
     <h3> Top 5 de ingredientes non gratos en mis comidas </h3>
 
     <ul>
-        <li> Vinagre </li>
+        <li class="Lista-de-alimentos"> Vinagre </li>
         <li> Salsa Valentina </li>
         <li> Aderezos </li>
         <li> Salsas extrañas </li>
@@ -77,13 +80,30 @@
 
     <span> Comida de Películas: Harry Potter </span>
     <dl>
-        <dt> <strong> Cerveza de Mantequilla </strong> </dt>
+        <dt class="Lista-de-alimentos"> Cerveza de Mantequilla </dt>
         <br>
-        <dd> La cerveza de mantequilla o cerveza de manteca es una bebida muy popular del mundo mágico descrita con un sabor un poco menos empalagoso que el de una butterscotch. </dd>
+        <dd> La cerveza de mantequilla o cerveza de manteca es una bebida muy popular del mundo mágico descrita con un
+            sabor un poco menos empalagoso que el de una butterscotch. </dd>
+        <br> <!-- Break, da un salto de línea, espaciado -->
+        <dt class="Lista-de-alimentos"> Rana de Chocolate </dt>
+        <br>
+        <dd> Las Ranas de Chocolate son un dulce muy común en el mundo mágico. Estas golosinas se pueden comprar en el
+            carrito de los dulces del Expreso de Hogwarts y en Honeydukes. Los empaques son de color azul y dorado y
+            tienen escritas las palabras "Rana de chocolate" en letras doradas además poseen una forma pentagonal. Cada
+            uno de éstos contiene una rana de chocolate, que tratará de escaparse, y un cromo, con la imagen de alguna
+            bruja o algún mago famoso, que se pueden coleccionar e intercambiar.</dd>
+        <dt class="Lista-de-alimentos"> Cerveza de Mantequilla </dt>
+        <br>
+        <dd> La cerveza de mantequilla o cerveza de manteca es una bebida muy popular del mundo mágico descrita con un
+            sabor un poco menos empalagoso que el de una butterscotch. </dd>
         <br> <!-- Break, da un salto de línea, espaciado -->
         <dt> <strong> Rana de Chocolate </strong> </dt>
         <br>
-        <dd> Las Ranas de Chocolate son un dulce muy común en el mundo mágico. Estas golosinas se pueden comprar en el carrito de los dulces del Expreso de Hogwarts y en Honeydukes. Los empaques son de color azul y dorado y tienen escritas las palabras "Rana de chocolate" en letras doradas además poseen una forma pentagonal. Cada uno de éstos contiene una rana de chocolate, que tratará de escaparse, y un cromo, con la imagen de alguna bruja o algún mago famoso, que se pueden coleccionar e intercambiar.</dd>
+        <dd> Las Ranas de Chocolate son un dulce muy común en el mundo mágico. Estas golosinas se pueden comprar en el
+            carrito de los dulces del Expreso de Hogwarts y en Honeydukes. Los empaques son de color azul y dorado y
+            tienen escritas las palabras "Rana de chocolate" en letras doradas además poseen una forma pentagonal. Cada
+            uno de éstos contiene una rana de chocolate, que tratará de escaparse, y un cromo, con la imagen de alguna
+            bruja o algún mago famoso, que se pueden coleccionar e intercambiar.</dd>
     </dl>
 
     <img src="./imagenes/ComidaVin.jpg" alt="Imagen de Comida en Estilo Vintage">
