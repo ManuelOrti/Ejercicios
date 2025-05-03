@@ -1,0 +1,59 @@
+*{ /* Resetear estilos que vienen por defecto del navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluir el padding y el borde dentro del ancho y alto del elemento */
+}
+
+.sedgwick-ave-display-regular {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal; 
+}
+
+h1{
+    font-family: "Sedgwick Ave Display", cursive;
+    text-align: center;
+}
+
+.tarjeta-banda{
+    background-color: darkmagenta;/* Fonde de color Magenta */
+    border: 3px solid black;
+    /*border-style: dashed solid;*/
+    /*padding: 20px 9px 52px 7px;*/
+    padding: 30px 70px;/* Espacio interno entre el contenido y el borde */
+    margin: 60px auto; /* Separación entre elementos, aplica a los 4 lados T,R,B,L */
+    max-width: 400px; /* Ancho máximo de 400px */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+}
+
+/* Estilo para el nombre de la banda dentro de la tarjeta */
+.nombre-banda {
+    font-family: "Sedgwick Ave Display", cursive; /* Fuente para título de banda */
+    color: black;/* Color marrón cálido */
+    text-align: center;/* Centra el texto */
+    font-size: 40px;
+}
+
+/* Estilo para la descripción de la banda*/
+.descripcion {
+    font-size: 18px;/* Tamaño de letra*/
+    color: #333;/* Color gris oscuro para dar contraste */
+    line-height: 1.5;/* Altura de línea para mejorar la legibilidad */
+}
+
+/* Pseudoelemento: Se añaden a los selectores y permiten añadir estilos a una parte concreta del documento.
+Para el siguiente ejemplo, tenemos un pseudo-elemento que da estilo a la primera letra de la descripción */
+.descripcion::first-letter {
+    font-size: 30px;                   /* Letra inicial más grande */
+    font-weight: bold;                /* Letra inicial en negrita */
+    color: #681b98;                    /* Color morado oscuro para destacar */
+}
+
+/*Pseudoclase: Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Ayudan a reducir el exceso de clases.
+Para el ejemplo, tenemos una pseudo-clase para cuando el mouse pasa sobre la tarjeta */
+
+.tarjeta-banda:hover {
+    background-color: rgba(97, 61, 206, 0.78);         /* Cambia el fondo a un tono diferente, del rosa que establecimos en la línea 32 a este morado */
+    transform: scale(1.2);/* Agranda ligeramente la tarjeta al pasar el cursor */
+}
