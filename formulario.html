@@ -29,7 +29,47 @@
             <p> Nota: El número mínimo de tamales para generar un pedido por este medio es de 20 piezas y máximo de 500 piezas. ¡Gracias por tu comprensión! </p>
 
             Número de tamales: <input type="number" min="20" max="500" required>
-        </fieldset>        
+            <br>
+
+            Fecha de Entrega: <input type="date">
+        </fieldset> 
+        <fieldset>
+            <legend> Datos del envío </legend>
+            <label for="recoger-en-sucursal"><!--El valor el atributo for de label debe ser igual al valor del atributo id del iput correspondiente  -->
+                <input id= "recoger-en-sucursal" type="radio" name="tipo-de-envio" required> Recoger en Sucursal
+            </label> 
+            <label for="envio-domicilio">
+                <input id="envio-domicilio" 
+                type="radio" name="tipo-de-envio"> Envío a Domicilio
+            </label>            
+            <input id="delivery" type="radio" name="tipo-de-envio"> 
+            <label for="delivery"> Delivery
+            </label> 
+            <label for="punto-medio">
+                <input id="punto-medio" type="radio" name="tipo-de-envio"> Punto Medio
+            </label>
+            <br>
+            <span>Por favor, selecciona una opción del siguiente menú: </span>
+            <br>
+            <select name="entregas-punto-medio" id="">                
+                <option value="metro-apatlaco"> Metro Apatlaco </option>
+                <option value="cablebus-santa-martha"> Cablebús Santa Martha </option>
+                <option value="palacio-municipal-de-neza"> Palacio Municipal de Neza </option>
+                <option value="faro-de-oriente"> Faro de Oriente </option>
+                <option value="metro-insurgentes"> Metro Insurgentes </option>
+                <option value="metrobus-tepalcates"> Metrobus Tepalcates </option>
+                <option value="centro-de-texcoco"> Centro de Texcoco </option>
+                <option value="fes-zaragoza"> FES Zaragoza </option>
+                <option value="estela-de-luz"> Estela de Luz </option>
+                <option value="coyoacan"> Coyoacán </option>
+                <option value="metro-oceania"> Metro Oceanía </option>
+                <option value="museo-yancuic"> Museo Yancuic </option>
+            </select> 
+            <br>
+            <datalist></datalist>
+            <!-- Casilla de Verificación -->
+            <input type="checkbox" required>
+        </fieldset>       
     </form>
 </body>
 </html>
