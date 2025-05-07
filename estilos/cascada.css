@@ -1,0 +1,33 @@
+h1{
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#title{
+    color: yellowgreen;
+}
+
+.principal-title{ /* Valor de especificidad 010 */
+    color: purple;
+}
+
+/* Valor de 1: Selectores tipo/elemento y pseudoelementos
+   Valor de 10: Selectores de clase, atributo y pseudoclases 
+   Valor de 100: Selectores de id
+*/
+
+h1.principal-title{ /* Suma de especificidades: 1(h1) + 10 (clase) = 11*/
+    color: crimson;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+h1{
+    color: seagreen;
+    color: brown !important;
+}
+
+
+
+
+
+
