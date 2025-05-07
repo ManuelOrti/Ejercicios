@@ -51,7 +51,8 @@
             <br>
             <span>Por favor, selecciona una opción del siguiente menú: </span>
             <br>
-            <select name="entregas-punto-medio" id="">                
+            <select name="entregas-punto-medio" id="">
+                <option value="seleccion" disabled selected> Selecciona una opción </option>                
                 <option value="metro-apatlaco"> Metro Apatlaco </option>
                 <option value="cablebus-santa-martha"> Cablebús Santa Martha </option>
                 <option value="palacio-municipal-de-neza"> Palacio Municipal de Neza </option>
@@ -66,10 +67,24 @@
                 <option value="museo-yancuic"> Museo Yancuic </option>
             </select> 
             <br>
-            <datalist></datalist>
-            <!-- Casilla de Verificación -->
-            <input type="checkbox" required>
-        </fieldset>       
+            <label>Choose a browser from this list:
+                <input list="browsers" name="myBrowser"/>
+              </label>
+              <datalist id="browsers"> <!-- Datalist no es soportado por Firefox, ojito ahí y cuidado con el uso -->
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Microsoft Edge"></option>
+              </datalist>
+              <br>
+              <input type="checkbox" required> Acepto términos y condiciones
+              <br>
+              <!-- Se renderiza como un botón de enviar -->
+              <!-- <input type="submit"> -->
+        </fieldset> 
+        <button type="submit"> ¡Ámonos recio! </button>      
     </form>
 </body>
 </html>
