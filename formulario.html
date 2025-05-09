@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="./estilos/formulario.css">
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li class="elemento-navegacion"><a href="index.html">Inicio</a></li>
+            <li class="elemento-navegacion"><a href="float.html">Float</a></li>
+            <li class="elemento-navegacion"><a href="https://greenday.com" target="_blank">Gree Day 💚</a></li>
+            <li class="elemento-navegacion"><a href="box-model.html">Box model</a></li>
+        </ul>
+    </nav>
     <header>
         <h1> ¡Contáctanos! </h1>
     </header>
-    <form action="" method="POST">
-        <fieldset> <!-- Agrupación por campos -->
-            <legend> Datos básicos del usuario</legend>
-            Nombre: <input type="text" placeholder="Nancy" required>
-            <br>
-            Apellido Paterno: <input type="text" placeholder="Moreno" required>
-            <br>
-            Apellido Materno: <input type="text" placeholder="Ramírez" required> 
-        </fieldset>
-        <fieldset>
-            <legend> Datos de Contacto </legend>
-            Correo electrónico: <input type="email" placeholder="nancy.moreno@generation.org" required>
-            <br>
-            Teléfono: <input type="tel" placeholder="55-XXXX-XXXX" required>
-        </fieldset>
-        <fieldset>
-            <legend> Datos del Pedido </legend>
-            <p> Nota: El número mínimo de tamales para generar un pedido por este medio es de 20 piezas y máximo de 500 piezas. ¡Gracias por tu comprensión! </p>
+    <main>
+        <form action="" method="POST">
+            <fieldset class="datos-basicos"> <!-- Agrupación por campos -->
+                <legend>Datos básicos del usuario</legend>
+                <label for=""> Nombre: </label>
+                <input type="text" placeholder="Nancy" required>
+                <label for=""> Apellido Paterno: </label>
+                <input type="text" placeholder="Moreno" required>
+                <label for="">Apellido Materno:</label>
+                <input type="text" placeholder="Ramírez" required>
+            </fieldset>
+            <fieldset class="datos-contacto">
+                <legend> Datos de Contacto </legend>
+                Correo electrónico: <input type="email" placeholder="nancy.moreno@generation.org" required>
+                <br>
+                Teléfono: <input type="tel" placeholder="55-XXXX-XXXX" required>
+            </fieldset>
+            <fieldset>
+                <legend> Datos del Pedido </legend>
+                <p> Nota: El número mínimo de tamales para generar un pedido por este medio es de 20 piezas y máximo de
+                    500
+                    piezas. ¡Gracias por tu comprensión! </p>
 
-            Número de tamales: <input type="number" min="20" max="500" required>
-            <br>
+                Número de tamales: <input type="number" min="20" max="500" required>
+                <br>
 
-            Fecha de Entrega: <input type="date">
-        </fieldset> 
-        <fieldset>
-            <legend> Datos del envío </legend>
-            <label for="recoger-en-sucursal"><!--El valor el atributo for de label debe ser igual al valor del atributo id del iput correspondiente  -->
-                <input id= "recoger-en-sucursal" type="radio" name="tipo-de-envio" required> Recoger en Sucursal
-            </label> 
-            <label for="envio-domicilio">
-                <input id="envio-domicilio" 
-                type="radio" name="tipo-de-envio"> Envío a Domicilio
-            </label>            
-            <input id="delivery" type="radio" name="tipo-de-envio"> 
-            <label for="delivery"> Delivery
-            </label> 
-            <label for="punto-medio">
-                <input id="punto-medio" type="radio" name="tipo-de-envio"> Punto Medio
-            </label>
-            <br>
-            <span>Por favor, selecciona una opción del siguiente menú: </span>
-            <br>
-            <select name="entregas-punto-medio" id="">
-                <option value="seleccion" disabled selected> Selecciona una opción </option>                
-                <option value="metro-apatlaco"> Metro Apatlaco </option>
-                <option value="cablebus-santa-martha"> Cablebús Santa Martha </option>
-                <option value="palacio-municipal-de-neza"> Palacio Municipal de Neza </option>
-                <option value="faro-de-oriente"> Faro de Oriente </option>
-                <option value="metro-insurgentes"> Metro Insurgentes </option>
-                <option value="metrobus-tepalcates"> Metrobus Tepalcates </option>
-                <option value="centro-de-texcoco"> Centro de Texcoco </option>
-                <option value="fes-zaragoza"> FES Zaragoza </option>
-                <option value="estela-de-luz"> Estela de Luz </option>
-                <option value="coyoacan"> Coyoacán </option>
-                <option value="metro-oceania"> Metro Oceanía </option>
-                <option value="museo-yancuic"> Museo Yancuic </option>
-            </select> 
-            <br>
-            <label>Choose a browser from this list:
-                <input list="browsers" name="myBrowser"/>
-              </label>
-              <datalist id="browsers"> <!-- Datalist no es soportado por Firefox, ojito ahí y cuidado con el uso -->
-                <option value="Chrome"></option>
-                <option value="Firefox"></option>
-                <option value="Internet Explorer"></option>
-                <option value="Opera"></option>
-                <option value="Safari"></option>
-                <option value="Microsoft Edge"></option>
-              </datalist>
-              <br>
-              <input type="checkbox" required> Acepto términos y condiciones
-              <br>
-              <!-- Se renderiza como un botón de enviar -->
-              <!-- <input type="submit"> -->
-        </fieldset> 
-        <button type="submit"> ¡Ámonos recio! </button>      
-    </form>
+                Fecha de Entrega: <input type="date">
+            </fieldset>
+            <fieldset>
+                <legend> Datos del envío </legend>
+                <label
+                    for="recoger-en-sucursal"><!--El valor el atributo for de label debe ser igual al valor del atributo id del iput correspondiente  -->
+                    <input id="recoger-en-sucursal" type="radio" name="tipo-de-envio" required> Recoger en Sucursal
+                </label>
+                <label for="envio-domicilio">
+                    <input id="envio-domicilio" type="radio" name="tipo-de-envio"> Envío a Domicilio
+                </label>
+                <input id="delivery" type="radio" name="tipo-de-envio">
+                <label for="delivery"> Delivery
+                </label>
+                <label for="punto-medio">
+                    <input id="punto-medio" type="radio" name="tipo-de-envio"> Punto Medio
+                </label>
+                <br>
+                <span>Por favor, selecciona una opción del siguiente menú: </span>
+                <br>
+                <select name="entregas-punto-medio" id="">
+                    <option value="seleccion" disabled selected> Selecciona una opción </option>
+                    <option value="metro-apatlaco"> Metro Apatlaco </option>
+                    <option value="cablebus-santa-martha"> Cablebús Santa Martha </option>
+                    <option value="palacio-municipal-de-neza"> Palacio Municipal de Neza </option>
+                    <option value="faro-de-oriente"> Faro de Oriente </option>
+                    <option value="metro-insurgentes"> Metro Insurgentes </option>
+                    <option value="metrobus-tepalcates"> Metrobus Tepalcates </option>
+                    <option value="centro-de-texcoco"> Centro de Texcoco </option>
+                    <option value="fes-zaragoza"> FES Zaragoza </option>
+                    <option value="estela-de-luz"> Estela de Luz </option>
+                    <option value="coyoacan"> Coyoacán </option>
+                    <option value="metro-oceania"> Metro Oceanía </option>
+                    <option value="museo-yancuic"> Museo Yancuic </option>
+                </select>
+                <br>
+                <label>Choose a browser from this list:
+                    <input list="browsers" name="myBrowser" />
+                </label>
+                <datalist id="browsers"> <!-- Datalist no es soportado por Firefox, ojito ahí y cuidado con el uso -->
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Internet Explorer"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                    <option value="Microsoft Edge"></option>
+                </datalist>
+                <br>
+                <input type="checkbox" required> Acepto términos y condiciones
+                <br>
+                <!-- Se renderiza como un botón de enviar -->
+                <!-- <input type="submit"> -->
+            </fieldset>
+            <button type="submit"> ¡Ámonos recio! </button>
+        </form>
+    </main>
 </body>
+
 </html>
